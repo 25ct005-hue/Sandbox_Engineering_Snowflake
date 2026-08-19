@@ -1,0 +1,13 @@
+{
+    "Test_environment": "uat",
+    "Test_name": "DDL Check",
+    "Test_Model_Name": "RAW_SOURCE_EMPL_PERS",
+    "Test_Background": "",
+    "Test_Results": {
+        "Total count": 91,
+        "Pass count": 91,
+        "Source Only Count": 0,
+        "Target Only Count": 0,
+        "Fail Only Count": 0
+    }
+}

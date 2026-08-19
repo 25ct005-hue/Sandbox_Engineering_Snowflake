@@ -1,0 +1,20 @@
+{
+  "fields": {
+    "project": {
+      "key": "SD"
+    },
+    "issuetype": {
+      "name": "Task"
+    },
+    "summary": "DDL Validation Failed - Column Datatype Mismatch in RAW_SOURCE_EMPL_PERS",
+    "description": "**Validation Framework:** DDL Validation\n\n**Table:** RAW_SOURCE_EMPL_PERS\n**Column:** EMPL_PERS_DOB\n\n**Expected Datatype:** DATE\n**Actual Datatype:** VARCHAR(100)\n\n**Validation Result:** FAIL\n\n**Reason:** Source Data Dictionary defines EMPL_PERS_DOB as DATE, however the Snowflake table was created using VARCHAR(100).\n\n**Impact:** Downstream models and data quality validations may fail due to incorrect datatype.\n\n**Recommended Action:** Modify the Snowflake table definition to match the approved Data Dictionary.",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "DDL",
+      "Metadata",
+      "Automation"
+    ]
+  }
+}

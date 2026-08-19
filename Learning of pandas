@@ -1,0 +1,28 @@
+Line 1 :
+import pandas as pd #importing the library
+
+dfg=pd.read_csv('filename.csv') #reading the csv file
+
+print(dfg.head(5)) # printing first five rows of csv file
+
+dfg.info #row column count, check missing value
+dfg.describe() # statistical summary of the data
+ 
+ #1.select specific rows
+df=dfg[['Product','Price']]
+
+ #2.filter rows on conditon
+ exp=dfg[dfg['Price']>500] , & for double conditon
+   
+#sorting the data 
+athi=dfg.sort_values(by='Price',ascending=False)
+
+#grouping the data
+athi=dfg.groupby('Category')['Price'].mean()
+
+
+#others
+automated results are generated in reports of ddl schema validation
+th results are stored like json format, using python we
+summarize it and generate it in md format 
+for better visualization and understanding of the data. The report includes details about missing columns, extra columns, datatype mismatches, and nullable mismatches between the CSV metadata and the actual Snowflake table schema.

@@ -1,0 +1,9 @@
+{
+  "run_id": "DDL_20260809_001",
+  "model_name": "RAW_SOURCE_EMPL_PERS",
+  "test_name": "DDL_VALIDATION",
+  "status": "PASS",
+  "passed": 8,
+  "failed": 0,
+  "warnings": 1
+}
