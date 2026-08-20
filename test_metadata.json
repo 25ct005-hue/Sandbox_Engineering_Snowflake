@@ -1,0 +1,18 @@
+{
+  "table_name": "RAW_SOURCE_EMPL_ACC",
+  "table_tests": [
+    {
+      "test_type": "uniqueness"
+    }
+  ],
+  "column_tests": [
+    {
+      "column_name": "EMPL_ACC_EID",
+      "test_type": "not null"
+    },
+    {
+      "column_name": "EMPL_ACC_STA",
+      "test_type": "expected value check"
+    }
+  ]
+}

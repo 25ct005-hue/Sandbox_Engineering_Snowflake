@@ -1,0 +1,18 @@
+version: 2
+models:
+- name: RAW_SOURCE_EMPL_ACC
+  tests:
+  - unique:
+      column_name: EMPL_ACC_EID
+  columns:
+  - name: EMPL_ACC_EID
+    tests:
+    - dbt_expectations.expect_column_values_to_not_be_null
+  - name: EMPL_ACC_STA
+    tests:
+    - dbt_expectations.expect_column_distinct_values_to_be_in_set:
+        value_set:
+        - ACTIVE
+        - INACTIVE
+        - TERMINATED
+        quote_values: true
